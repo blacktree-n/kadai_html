@@ -1,0 +1,261 @@
+/* ここから下に記載していく */
+
+/* ----------------
+共通
+------------------- */
+@charset "utf-8";
+html{
+    font-size: 62.5%;/*16px(標準フォントサイズ) × 62.5% =10px */    
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.6rem;
+}
+h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+p{
+    margin: 0 0 40px 0;
+    line-height: 2;
+}
+section{
+    margin: 60px 0;
+}
+footer{
+    padding: 30px;
+    background: #707070;
+    color: #ffffff;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+.yellow{
+    color: #ffd61a;
+}
+.bg{
+    background: #fafafa;
+}
+
+
+/* ---------------
+header
+------------------ */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 121px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    margin: 50px 50px 50px 0px;
+}
+.nav-item>a{
+    color: #222222;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+/* ---------------
+メインビジュアル
+------------------ */
+.main_visual{
+    width: 1200px;
+    height: 400px;
+    background: red;
+    background-image: url("../img/mainbg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: 0 auto;
+}
+
+.main_visual_text_wrapper{
+    padding:  155px;
+}
+
+.main_visual_title{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.main_visual_subtitle{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+/* ---------------
+About
+------------------ */
+.about_img_list{
+    display: flex;
+    margin: 80px 0 0 0;
+}
+.about_img{
+    width: 25%;
+}
+
+/* ---------------
+course
+------------------ */
+.course_line{
+    display: flex;
+}
+.course_tile{
+    width: 600px;
+}
+.course_right_text{
+    width: 480px;
+    padding: 120px 120px 80px 50px;
+    vertical-align: middle;
+}
+.course_left_text{
+    width: 480px;
+    padding: 120px 50px 80px 120px;
+    vertical-align: middle;
+}
+.course_text_title{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+/* ---------------
+news
+------------------ */
+
+.news_list{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 60px 0;
+}
+.news_tile{
+    width: 300px;
+    margin: 0 30px 0 0;
+}
+.news_tile:hover{
+    background-color: gold;
+}
+.news_date{
+    margin: 30px 0 24px 0;
+}
+.btn{
+    /* displayプロパティでインラインをブロックに変更する */
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding: 21px 0;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+/* ---------------
+access
+------------------ */
+.access_section{
+    padding: 60px 0;
+}
+.map{
+    margin: 0 0 60px 0;
+}
+.address_table{
+    width: 45%;
+    margin: 0 auto;
+}
+.address_table th,
+.address_table td{
+    font-size: 20;
+    padding: 15px;
+    text-align: left;
+}
+/* ---------------
+contact
+------------------ */
+.contact_text{
+    margin: 0 0 30px 0;
+}
+.alart_text{
+    margin: 0 0 70px 0;
+}
+.form-wrapper{
+    display: block;
+    width: 641px;
+    margin: auto;
+}
+.form_inner{
+    display: flex;
+    /* 折り返しをするために以下のcssを設定するが、
+    　innerの横幅=titleの横幅＋itemの横幅になってないと
+    　きれいに折り返さない */
+    flex-wrap: wrap;
+    border-bottom: 2px #bfbfbf solid;
+    margin: 0 0 30px 0;
+}
+.form-title{
+    width: 160px;
+    padding: 0 64px 0 16px;
+    display:inline-block;
+    vertical-align: middle;
+    border-top: 2px #bfbfbf solid;
+    border-right: 1px #bfbfbf solid;
+}
+.form-item{
+    width: 390px;
+    padding: 8px 0 8px 8px;
+    border-top: 2px #bfbfbf solid;
+}
+.form_text{
+    width: 320px;
+    height: 30px;
+}
+.form_select{
+    width: 328px;
+    height: 36px;
+}
+.form_checkbox_list{
+    border-top: 2px #bfbfbf solid;
+    padding: 12px 0 0 0;
+}
+.form_checkbox{
+    width: 399px;
+    margin: 0 0 24px 0;
+}
+.form_textarea_wrapper{
+    border-top: 2px #bfbfbf solid;
+    width: 391px;
+    padding: 8px 0 8px 8px;
+}
+.form_textarea{
+    width: 322px;
+}
+.btn2{
+    /* displayプロパティでインラインをブロックに変更する */
+    display: block;
+    border: none;
+    margin: 0 auto 140px auto;
+    width: 300px;
+    padding: 21px 0;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.btn2:hover{
+    transform: scale(1.1);
+} 
